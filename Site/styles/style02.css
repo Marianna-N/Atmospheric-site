@@ -1,0 +1,37 @@
+section{ /*Свойства основного блока*/
+	background:transparent;
+}
+#left_arrow{
+	padding-left:45px;
+	float:left;
+	margin-top:150px;
+	cursor: pointer;
+	width:50px;
+	margin-right:5px;
+}
+#right_arrow{
+	padding-right:45px;
+	float:right;
+	margin-top:150px;
+	cursor: pointer;
+	width:50px;
+}
+#images_block{
+	float:left;
+	width:79%;
+	margin:auto;
+	height:400px;
+}
+
+#images_block img{
+	
+	margin:auto;
+	margin-left:20px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+#num_img{
+	clear:both;
+}
+footer{
+	border-radius:20px 20px 0 0;
+}

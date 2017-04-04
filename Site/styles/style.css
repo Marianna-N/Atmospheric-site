@@ -1,0 +1,191 @@
+html
+{
+	background-color:white;
+	height:100%;
+}
+body{
+	/*градиент для создания "цвета под футтер" для разной высоты страницы*/
+	background-color:white;
+	background-image:-webkit-linear-gradient(white 780px,#72E2D4 5px,#72E2D4);
+	background-image: -moz-linear-gradient(white 780px,#72E2D4 5px,#72E2D4);
+	background-image: -o-linear-gradient(white 780px,#72E2D4 5px,#72E2D4);
+	background-image: linear-gradient(white 780px,#72E2D4 5px,#72E2D4);
+	width:1004px;
+	margin:auto auto;
+	margin-top:20px;
+	font-family:"Segoe Print";
+	font-size:16px;
+	color:#172247;
+	font-weight:bold;
+	text-align:center;
+	height:100%;
+}
+header{
+	padding:5px 35px 0 35px;
+}
+header h3{ /*Свойства подзаголовка*/
+	margin-top:20px;
+	font-size:20px;
+}
+header h2{ /*Свойства заголовка*/
+	font-family:"Curlz MT";
+	font-size:48px;
+	letter-spacing:0.2em;
+}
+#registration a:hover{
+	text-decoration:underline;
+}
+#logo{ /*Свойства логотипа*/
+	float:left;
+	width:120px;
+}
+#registration{ /*Свойства блока регистрации*/
+	float:right;
+	width:110px;
+	height:80px;
+	margin-top:20px;
+	background:url(../images/fon_registration.gif) center center no-repeat;
+	text-align:center;
+}
+#registration a{ /*Свойства ссылок блока регистрации*/
+	display:inline-block;
+	padding-top:10px;
+	text-decoration:none;
+	color:#172247;
+}
+#first_line{ /*Свойства верхней разделительной линии*/
+	clear:both;
+	background:url(../images/beg_vitki.png) center left no-repeat,url(../images/fin_vitki.png) center right no-repeat;
+	padding:16px 17px 11px 17px;
+	width:75%;
+	margin:-12px auto;
+}
+#first_line hr, #second_line hr{
+	border: none; /* Убираем границу для браузера Firefox */
+    color: #172247; /* Цвет линии для остальных браузеров */
+    background-color: #172247; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */
+}
+#second_line{ /*Свойства нижней разделительной линии*/
+	background:url(../images/beg2_vitki.png) center left no-repeat,url(../images/fin2_vitki.png) center right no-repeat;
+	padding:11px 17px 16px 17px;
+	width:75%;
+	margin:-12px auto;
+}
+#mainmenu li{ /*Свойства пунктов списка меню*/
+	display:inline;
+	list-style-type:none;
+}
+#mainmenu a{ /*Свойства ссылок меню*/
+	display:inline-block;
+	padding:2px;
+	margin:0 12px;
+	text-decoration:none;
+	font-size:24px;
+	color:#172247;
+}
+#mainmenu a:hover{ /*Свойства активных ссылок меню*/
+	background-color:#B3FDE6;
+	border-radius:20px;
+	position: relative;
+}
+.rollmenu{
+	display: none;
+    background-color: #B3FDE6;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+	width: 65%;
+	margin:auto;
+}
+.rollmenu a{
+	display:inline-block;
+	font-size: 22px;
+	color:#172247;
+    padding:5px;
+	text-decoration:none;
+}
+.rollmenu a:hover{
+	text-decoration:underline;
+}
+#rollmenu_container{
+	margin-top:-20px;
+	height:60px;
+}
+section{ /*Свойства основного блока*/
+	background:url(../images/tree_glass.jpg) center bottom no-repeat;
+	padding:25px 0;
+	margin-top:5px;
+	min-height: 400px;
+
+}
+section p{ /*Свойства текста основного блока*/
+	width:385px;
+	margin:auto auto;
+}
+footer{ /*Свойства футера*/
+	background-color:#72E2D4;
+	padding:15px 50px 20px 50px;
+	font-family:"Curlz MT";
+}
+
+.social{ /*Свойства блока соцсетей*/
+	font-size:24px;
+	float:right;
+	width:40px;
+	height:40px;
+	background-color:white;
+	border:2px solid #172247;
+	border-radius:100%;
+	margin-right:10px;
+	text-align:center;
+}
+.social a{ /*Свойства ссылок соцсетей*/
+	text-decoration:none;
+	display:inline-block;
+	padding-top:5px;
+	color:#172247;
+}
+#copyright{/*Свойства блока автора*/
+	margin-top:15px;
+	text-align:left;
+	font-size:20px;
+}
+@media screen and (max-width: 1004px){
+	body{
+		width:100%;
+	}
+	#first_line,#second_line{
+		width:90%;
+	}
+}
+@media screen and (max-width: 680px){
+	header h3, header h2{
+		display:none;
+	}
+	header{
+		padding:5px 20px 0 20px;
+	}
+}
+@media screen and (max-width: 320px) {
+	header{
+		padding:2px;
+	}
+	#first_line,#second_line{
+		width:80%;
+	}
+	#mainmenu li{
+		display:block;
+	}
+	section{
+		background:url(../images/fon_section.gif) center bottom no-repeat;
+	}
+	section p{
+		width:100%;
+	}
+	#copyright{
+		display:none;
+	}
+	footer{
+		padding:0 25px 50px 50px;
+	}
+}
